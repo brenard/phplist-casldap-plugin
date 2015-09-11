@@ -28,6 +28,7 @@ class CASLdapPlugin extends phplistPlugin
     */
     public $name = 'CAS LDAP Auth Plugin';
     public $description = 'Use CAS SSO to authenticate administrators and retrieve their informations and superuser rights from LDAP';
+    public $documentationUrl = 'https://github.com/brenard/phplist-casldap-plugin';
     public $enabled = 1;
     public $version = '1.0';
 
