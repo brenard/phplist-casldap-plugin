@@ -228,11 +228,6 @@ class CASLdapPlugin extends phplistPlugin
         ),
     );
 
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
     public function activate() {
       if (CHECK_REFERRER) {
         global $allowed_referrers;
