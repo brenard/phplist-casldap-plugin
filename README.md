@@ -25,3 +25,8 @@ Put `CASLdapPlugin.php` content in the zip file in your phplist plugins director
 ### Enable and configure the plugin ###
 Enable it on the Plugins page (menu Config > Plugins). After, navigate to the phplist settings page and fill in your CAS/LDAP informations.
 It is under the CAS/LDAP section.
+
+### Add patch to trigger automatic CAS login ###
+Currently, PhpList plugin API doesn't permit to catch login form to handle automatic CAS/LDAP login. This will normally be added in [next release of PhpList](https://mantis.phplist.org/view.php?id=18027).
+
+Consequently, you still have to apply a small patch on PhpList core code as describe in [this commit](https://github.com/brenard/phplist3/commit/c875da8996f79e13697676913f7bac7dfd9a0638).
