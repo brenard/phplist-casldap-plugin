@@ -229,6 +229,7 @@ class CASLdapPlugin extends phplistPlugin
     );
 
     public function activate() {
+      parent::activate();
       if (CHECK_REFERRER) {
         global $allowed_referrers;
         if (!isset($allowed_referrers)) $allowed_referrers=array();
